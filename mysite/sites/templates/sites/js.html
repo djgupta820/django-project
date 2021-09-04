@@ -1,0 +1,83 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page">
+            <div class="index"> 
+                <p> Index </p>
+                <ul> 
+                    <li> <a href="#js"> JavaScript </a> </li>
+                    <li> <a href="#wcs"> Website client-side usage </a> </li>
+                    <li> <a href="#lib"> Libraries and frameworks </a> </li>
+                </ul>
+            </div>
+            
+            <div class="content"> 
+                
+                <h1>JavaScript</h1>
+                <p> 
+                    JavaScript often abbreviated as JS, is 
+                    a programming language that conforms to the ECMAScript 
+                    specification. JavaScript is high-level, often just-in-time 
+                    compiled, and multi-paradigm. It has curly-bracket syntax, 
+                    dynamic typing, prototype-based object-orientation, and 
+                    first-class functions.Alongside HTML and CSS, JavaScript is 
+                    one of the core technologies of the World Wide Web. 
+                    Over 97% of websites use it client-side for web page behavior,
+                    often incorporating third-party libraries. 
+                    All major web browsers have a dedicated JavaScript engine 
+                    to execute the code on the user's device.
+                </p>
+                <p>As a multi-paradigm language, JavaScript supports event-driven, 
+                    functional, and imperative programming styles. It has application 
+                    programming interfaces (APIs) for working with text, dates, 
+                    regular expressions, standard data structures, and the Document 
+                    Object Model (DOM).
+                </p>
+                <hr id="wcs">
+                <h3> Website client-side usage </h3>
+                <p> 
+                    JavaScript is the dominant client-side scripting language of 
+                    the Web, with 97% of websites using it for this purpose. 
+                    Scripts are embedded in or included from HTML documents 
+                    and interact with the DOM. All major web browsers have a 
+                    built-in JavaScript engine that executes the code on the 
+                    user's device.
+                </p>
+                <hr id="lib">
+                <h3> Libraries and frameworks </h3>
+                <p> 
+                    Over 80% of websites use a third-party JavaScript library or 
+                    web framework for their client-side scripting. jQuery is by 
+                    far the most popular library, used by over 75% of websites. 
+                    Facebook created the React library for its website and 
+                    later released it as open source; other sites, including 
+                    Twitter, now use it.
+                </p>
+                <p> Likewise, the Angular framework created by Google for its 
+                    websites, including YouTube and Gmail, is now an open source 
+                    project used by others. In contrast, the term "Vanilla JS" has 
+                    been coined for websites not using any libraries or frameworks, 
+                    instead relying entirely on standard JavaScript functionality.
+                </p>
+            </div>
+            <div class="img-class"> 
+                <figure> 
+                    <img src="{% static 'sites/jsimage.png' %}" height="170px" width="170px" alt="Html Image"> 
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-js"> 
+                <p> Click here to get more information about <a href="https://www.w3schools.com/js/default.asp" target="_blank"> JavaScript </a> </p>
+            </footer>
+
+            <form action="css.html">
+                <input type="submit" value="&larr; Prev" style="float:left;">
+            </form>
+            <form action="php.html">
+                <input type="submit" value="Next &rarr;" style="float:right;">
+            </form>
+        </div>
+
+{% endblock content %}

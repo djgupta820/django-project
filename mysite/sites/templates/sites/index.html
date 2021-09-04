@@ -1,0 +1,37 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" media="screen" href="{% static 'sites/style.css' %}" type="text/css" />
+<link rel="stylesheer" href="{% static 'sites/style1.css' %}" type="text/css">
+<link rel="stylesheer" href="{% static 'sites/index.css' %}" type="text/css">
+    <div class="content"> 
+        <h2> Computer Languages</h2>
+        <ul> 
+            <li>A computer language is a method of communication with a computer. Types of computer languages include: </li>
+            <li><b>Construction language</b>, all forms of communication by which a human can specify an executable problem solution to a computer </li>
+            <li><b>Command language</b>, a language used to control the tasks of the computer itself, such as starting other programs </li>
+            <li><b>Configuration language</b>, a language used to write configuration files </li>
+            <li><b>Programming language</b>, a formal language designed to communicate instructions to a machine, particularly a computer </li>
+            <li><b>Markup language</b>, a grammar for annotating a document in a way that is syntactically distinguishable from the text, such as HTML </li>
+            <li><b>Modeling language</b>, a formal language used to express information or knowledge, often for use in computer system design </li>
+            <li><b>Hardware description language</b>, used to model integrated circuits </li>
+            <li><b>Query language</b>, a language used to make queries in databases and information systems </li>
+            <li><b>Style sheet language</b>, a computer language that expresses the presentation of structured documents, such as CSS </li>
+        </ul> 
+    </div>
+
+    <h1> Start Learning Technologies </h1>
+
+    <div class="box-container" id="alllinks"> 
+            <div class="box"> <a href="{% url 'html' %}"> <img src="{% static 'sites/htmlimage.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/cssimage.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/jsimage.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/phpimage.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/java.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/c-programming.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/c++ programming.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/python.png' %}"> </a> </div>
+            <div class="box"> <a href=""> <img src="{% static 'sites/linux.png' %}"> </a> </div>
+    </div>
+{% endblock content%}

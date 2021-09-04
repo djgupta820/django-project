@@ -1,0 +1,107 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+    <hr id="html">
+        <div class="page">
+            <div class="index">
+                <p> Index </p>
+                <ul> 
+                    <li> <a href="#html"> HTML </a> </li>
+                    <li> <a href="#markup"> Markup </a> </li>
+                    <li> <a href="#element"> Elements </a> </li>
+                </ul>
+            </div>
+            
+            <div class="content"> 
+                <hr id="html">
+                <h1> HTML (HyperText Markup Language) </h1>
+                    <p> The HyperText Markup Language, or HTML is the standard markup 
+                    language for documents designed to be displayed in a web browser. It 
+                    can be assisted by technologies such as Cascading Style Sheets (CSS) 
+                    and scripting languages such as JavaScript.Web browsers receive HTML
+                    documents from a web server or from local storage and render the
+                    documents into multimedia web pages. HTML describes the structure of 
+                    a web page semantically and originally included cues for the appearance
+                    of the document. <br><br></p>
+
+                    <p>HTML elements are the building blocks of HTML pages. With HTML
+                    constructs, images and other objects such as interactive forms may be
+                    embedded into the rendered page. HTML provides a means to create
+                    structured documents by denoting structural semantics for text such as
+                    headings, paragraphs, lists, links, quotes and other items. HTML 
+                    elements are delineated by tags, written using angle brackets. 
+                    Browsers do not display the HTML tags, but use them to interpret the 
+                    content of the page.<br><br> </p>
+
+                    <p>HTML can embed programs written in a scripting language such as 
+                    JavaScript, which affects the behavior and content of web pages. 
+                    Inclusion of CSS defines the look and layout of content. The World 
+                    Wide Web Consortium (W3C), former maintainer of the HTML and current 
+                    maintainer of the CSS standards, has encouraged the use of CSS over 
+                    explicit presentational HTML since 1997.<br></p>
+
+                    <hr id="markup">
+                    <h3> Markup </h3>
+                    <p><br>
+                        HTML markup consists of several key components, including those 
+                        called tags (and their attributes), character-based data types, 
+                        character references and entity references. HTML tags most commonly 
+                        come in pairs like &#60;h1&#62; and &#60;/h1&#62;, although some represent empty 
+                        elements and so are unpaired, for example &#60;img&#62;. The first 
+                        tag in such a pair is the start tag, and the second is the end tag 
+                        (they are also called opening tags and closing tags).<br><br>
+                    </p>
+                    <p>Another important component is the HTML document type declaration, 
+                    which triggers standards mode rendering.The following is an 
+                    example of the classic "Hello, World!" program:
+                    </p>
+                    
+                    <pre> 
+                        <code> 
+                                <html>
+                                    <head>
+                                        <title>This is a title</title>
+                                    </head>
+                                    <body>
+                                        <div>
+                                            <p>Hello world!</p>
+                                        </div>
+                                    </body>
+                                </html>
+                        </code>
+                    </pre> 
+                    <hr id="element">
+                    <h3> Elements </h3>
+                    <p> 
+                    HTML documents imply a structure of nested HTML elements. These 
+                    are indicated in the document by HTML tags, enclosed in angle brackets
+                    thus: &#60;p&#62;.In the simple, general case, the extent of an
+                    element is indicated by a pair of tags: a "start tag" &#60;p&#62;
+                    and "end tag" &#60;/p&#62;. The text content of the element, if 
+                    any, is placed between these tags.</p>
+                    <p>Tags may also enclose further tag markup between the start
+                    and end, including a mixture of tags and text. 
+                    This indicates further (nested) elements, as children of the
+                    parent element.
+                    </p>
+            </div>
+
+            <div class="img-class"> 
+                <figure> 
+                    <img src="{% static 'sites/htmlimage.png' %}" height="170px" width="170px" alt="Html Image"> 
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-html"> 
+                <p> Click here to get more information about <a href="https://www.w3schools.com/html/default.asp" target="_blank"> HTML </a> </p>
+            </footer>
+        <div>
+        <form action="index.html">
+                <input type="submit" value="&larr; Prev" style="float:left;">
+        </form>
+        <form action="css.html">
+                <input type="submit" value="Next &rarr;" style="float:right;">
+        </form>
+{% endblock  %}

@@ -1,0 +1,82 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page">
+            <div class="index">
+                <p> Index </p>
+                <ul> 
+                    <li> <a href="#java"> Java </a> </li>
+                    <li> <a href="#history"> History </a> </li>
+                    <li> <a href="#pri"> Principles </a> </li>
+                </ul>
+            </div>
+            <div class="content"> 
+                <hr id="java">
+                <h1> Java (programming language) </h1>
+                <p> 
+                    Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them. The Java runtime provides dynamic capabilities (such as reflection and runtime code modification) that are typically not available in traditional compiled languages. As of 2019, Java was one of the most popular programming languages in use according to GitHub, particularly for client-server web applications, with a reported 9 million developers.
+                </p>
+                <p>
+                    Java was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) and released in 1995 as a core component of Sun Microsystems' Java platform. The original and reference implementation Java compilers, virtual machines, and class libraries were originally released by Sun under proprietary licenses. As of May 2007, in compliance with the specifications of the Java Community Process, Sun had relicensed most of its Java technologies under the GNU General Public License. Oracle offers its own HotSpot Java Virtual Machine, however the official reference implementation is the OpenJDK JVM which is free open source software and used by most developers and is the default JVM for almost all Linux distributions.
+                </p>
+                <p>
+                    
+                </p>
+                
+                <hr id="history">
+                <h3> History </h3>
+                <p> 
+                    James Gosling, Mike Sheridan, and Patrick Naughton initiated the Java language project in June 1991. Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time. The language was initially called Oak after an oak tree that stood outside Gosling's office. Later the project went by the name Green and was finally renamed Java, from Java coffee, a type of coffee from Indonesia. Gosling designed Java with a C/C++-style syntax that system and application programmers would find familiar.
+                </p>
+                <p>
+                    Sun Microsystems released the first public implementation as Java 1.0 in 1996. It promised Write Once, Run Anywhere (WORA) functionality, providing no-cost run-times on popular platforms. Fairly secure and featuring configurable security, it allowed network- and file-access restrictions. Major web browsers soon incorporated the ability to run Java applets within web pages, and Java quickly became popular. The Java 1.0 compiler was re-written in Java by Arthur van Hoff to comply strictly with the Java 1.0 language specification. With the advent of Java 2 (released initially as J2SE 1.2 in December 1998 – 1999), new versions had multiple configurations built for different types of platforms. J2EE included technologies and APIs for enterprise applications typically run in server environments, while J2ME featured APIs optimized for mobile applications. The desktop version was renamed J2SE. In 2006, for marketing purposes, Sun renamed new J2 versions as Java EE, Java ME, and Java SE, respectively.
+                </p>
+                <p>
+                    
+                </p>
+                <h2> A simple Java program is given velow...</h2> 
+                <pre> 
+                    <code> 
+                        public class japp1
+                        {
+                            public static void main(String args[])
+                            {
+                                System.out.println("Hello World");
+                            }
+                        }
+                    </code>
+                </pre>
+                
+                <hr id="pri">
+                <h3> Principles </h3>
+                <p> 
+                    There were five primary goals in the creation of the Java language:
+                    <ol> 
+                        <li> It must be simple, object-oriented, and familiar </li>
+                        <li> It must be robust and secure. </li>
+                        <li> It must be architecture-neutral and portable. </li>
+                        <li> It must execute with high performance. </li>
+                        <li> It must be interpreted, threaded, and dynamic. </li>
+                    </ol>
+                </p>
+            </div>
+            <div class="img-class"> 
+                <figure> 
+                    <img src="{% static 'sites/java.png' %}" height="170px" width="170px" alt="java Image"> 
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-html" style="margin-top:1550px;"> 
+                <p> Click here to get more information about <a href="https://www.w3schools.com/java/default.asp" target="_blank"> java </a> </p>
+            </footer>
+        </div>
+        <form action="index.html">
+                <input type="submit" value="&larr; Prev" style="float:left;">
+        </form>
+        <form action="css.html">
+                <input type="submit" value="Next &rarr;" style="float:right;">
+        </form>
+
+{% endblock content %}

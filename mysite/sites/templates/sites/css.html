@@ -1,0 +1,92 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page">
+            
+    <div class="index"> 
+        <p> Index </p>
+        <ul> 
+            <li> <a href="#css"> CSS </a> </li>
+            <li> <a href="#selector"> Selectors </a> </li>
+            <li> <a href="#db"> Declaration block </a> </li>
+        </ul>
+    </div>
+
+    <div class="content"> 
+                
+        <h1> CSS (Cascading Style Sheet) </h1>
+        <p> 
+        Cascading Style Sheets (CSS) is a style sheet language used
+        for describing the presentation of a document written in a 
+        markup language such as HTML. CSS is a cornerstone technology 
+        of the World Wide Web, alongside HTML and JavaScript.CSS is 
+        designed to enable the separation of presentation and content, 
+        including layout, colors, and fonts. This separation can 
+        improve content accessibility, provide more flexibility and control 
+        in the specification of presentation characteristics, enable 
+        multiple web pages to share formatting by specifying the relevant 
+        CSS in a separate .css file which reduces complexity and repetition 
+        in the structural content as well as enabling the .css 
+        file to be cached to improve the page load speed between the pages 
+        that share the file and its formatting.
+        </p>
+        <hr id="selector">
+        <h3> Selectors </h3>
+        <p> 
+        In CSS, selectors declare which part of the markup a style 
+        applies to by matching tags and attributes in the markup itself.
+        Selectors may apply to the following:<br>
+        <ul> 
+            <li> all elements of a specific type, e.g. the second-level headers h2</li>
+            <li> elements specified by attribute, in particular:
+            <ul> 
+                <li> id: an identifier unique within the document, identified with a hash prefix e.g. #id</li>
+                <li> class: an identifier that can annotate multiple elements in a document, identified with a period prefix e.g. .classname</li>
+                <li> elements depending on how they are placed relative to others in the document tree.</li>
+            </ul>
+            </li>
+        </ul>
+        </p>
+        <p> Classes and IDs are case-sensitive, start with letters, 
+            and can include alphanumeric characters, hyphens, and 
+            underscores. A class may apply to any number of instances of 
+            any elements. An ID may only be applied to a single element.
+        </p>
+                <hr id="db">
+                <h3> Declaration Block </h3>
+                <p> 
+                    A declaration block consists of a list of declarations in 
+                    braces. Each declaration itself consists of a property, a 
+                    colon (:), and a value. If there are multiple declarations 
+                    in a block, a semi-colon (;) must be inserted to separate each 
+                    declaration. An optional semi-colon after the last (or single) 
+                    declaration may be used.
+                </p>
+                <p>Properties are specified in the CSS standard. Each property 
+                has a set of possible values. Some properties can affect any 
+                type of element, and others apply only to particular groups of 
+                elements.
+                </p>
+
+            </div>
+            <div class="css-img"> 
+                <figure> 
+                    <img src="{% static 'sites/cssimage.png' %}" height="170px" width="170px" alt="CSS Image" /> 
+                    <figcaption> CSS </figcaption>
+                </figure>
+            </div>
+            <footer class="footer-css"> 
+                <p> Click here to get more information about <a href="https://www.w3schools.com/html/default.asp" target="_blank"> HTML </a> </p>
+            </footer>
+            
+            <form action="html.html">
+                <input type="submit" value="&larr; Prev" style="float:left;">
+            </form>
+            <form action="js.html">
+                <input type="submit" value="Next &rarr;" style="float:right;">
+            </form>
+            </div>
+        </div>
+
+{% endblock content %}

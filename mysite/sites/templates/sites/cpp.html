@@ -1,0 +1,111 @@
+{% extends 'sites/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="page">
+            <div class="index">
+                <p> Index </p>
+                <ul> 
+                    <li> <a href="#cpp"> C++ </a> </li>
+                    <li> <a href="#history"> History </a> </li>
+                    <li> <a href="#phi"> Philosophy </a> </li>
+                </ul>
+            </div>
+            <div class="content"> 
+                <hr id="cpp">
+                <h1> Cpp </h1>
+                <p> 
+                    C++ is a general-purpose programming language created by Bjarne 
+                    Stroustrup as an extension of the C programming language, or 
+                    "C with Classes". The language has expanded significantly over 
+                    time, and modern C++ now has object-oriented, generic, and 
+                    functional features in addition to facilities for low-level memory 
+                    manipulation. It is almost always implemented as a compiled language, 
+                    and many vendors provide C++ compilers, including the Free Software 
+                    Foundation, LLVM, Microsoft, Intel, Oracle, and IBM, so it is 
+                    available on many platforms.
+                </p>
+                <p>
+                    C++ was designed with an orientation toward system programming and 
+                    embedded, resource-constrained software and large systems, with 
+                    performance, efficiency, and flexibility of use as its design highlights.
+                    C++ has also been found useful in many other contexts, with key strengths 
+                    being software infrastructure and resource-constrained applications, including 
+                    desktop applications, video games, servers (e.g. e-commerce, web search, or 
+                    databases), and performance-critical applications (e.g. telephone switches 
+                    or space probes).
+                </p>
+                
+                <hr id="history">
+                <h3> History </h3>
+                <p> 
+                    In 1979, Bjarne Stroustrup, a Danish computer scientist, began 
+                    work on "C with Classes", the predecessor to C++.The motivation
+                    for creating a new language originated from Stroustrup's experience 
+                    in programming for his PhD thesis. Stroustrup found that Simula had 
+                    features that were very helpful for large software development, but 
+                    the language was too slow for practical use, while BCPL was fast but 
+                    too low-level to be suitable for large software development. When 
+                    Stroustrup started working in AT&T Bell Labs, he had the problem of 
+                    analyzing the UNIX kernel with respect to distributed computing. 
+                    Remembering his PhD experience, Stroustrup set out to enhance the 
+                    C language with Simula-like features. C was chosen because it was 
+                    general-purpose, fast, portable and widely used. As well as C and 
+                    Simula's influences, other languages also influenced this new language, 
+                    including ALGOL 68, Ada, CLU and ML.
+                </p>
+                <p>
+                    Initially, Stroustrup's "C with Classes" added features to the C compiler, 
+                    Cpre, including classes, derived classes, strong typing, inlining and 
+                    default arguments.
+                </p>
+                <h2> A simple c++ program is given velow...</h2> 
+                <pre> 
+                    <code> 
+                        #include<conio.h>
+                        int main()
+                        {
+                            cout<<"Hello World";
+                        }
+                    </code>
+                </pre>
+                
+                <hr id="phi">
+                <h3> Philosophy </h3>
+                <p> 
+                    Throughout C++'s life, its development and evolution has been 
+                    guided by a set of principles:
+                    <ul> 
+                        <li> It must be driven by actual problems and its features should be immediately useful in real world programs.</li>
+                        <li> Every feature should be implementable (with a reasonably obvious way to do so). </li>
+                        <li> Programmers should be free to pick their own programming style, and that style should be fully supported by C++. </li>
+                        <li> Allowing a useful feature is more important than preventing every possible misuse of C++. </li>
+                        <li> It should provide facilities for organising programs into separate, well-defined parts, and provide facilities for combining separately developed parts. </li>
+                        <li> No implicit violations of the type system (but allow explicit violations; that is, those explicitly requested by the programmer). </li>
+                        <li> User-created types need to have the same support and performance as built-in types. </li>
+                        <li> Unused features should not negatively impact created executables (e.g. in lower performance). </li>
+                        <li> There should be no language beneath C++ (except assembly language). </li>
+                        <li> C++ should work alongside other existing programming languages, rather than fostering its own separate and incompatible programming environment. </li>
+                        <li> If the programmer's intent is unknown, allow the programmer to specify it by providing manual control. </li>
+                    </ul>
+                </p>
+            </div>
+            <div class="img-class"> 
+                <figure> 
+                    <img src="{% static 'sites/c++ programming.png' %}" height="170px" width="170px" alt="Html Image"> 
+                    <figcaption>HTML</figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-html" style="margin-top:1750px;"> 
+                <p> Click here to get more information about <a href="https://www.w3schools.com/cpp/" target="_blank"> C++ </a> </p>
+            </footer>
+        </div>
+        <form action="index.html">
+                <input type="submit" value="&larr; Prev" style="float:left;">
+        </form>
+        <form action="css.html">
+                <input type="submit" value="Next &rarr;" style="float:right;">
+        </form>
+
+{% endblock content %}

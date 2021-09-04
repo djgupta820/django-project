@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+}
+nav{
+    height: 60px;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: #00FF00;
+    position:fixed;
+}
+nav ul li{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.5em;
+    /*background-color: #3498DB;*/
+    color:black;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+nav ul li a:hover{
+    color:white;
+    text-shadow: 2px 2px 2px white;
+}
+.content{
+    margin-top:65px;
+    padding:2px;
+    height:500px;
+    width: 1345px;
+    background-image: url("background1.jpg");
+}
+.content h1{
+    font-size: 3em;
+    margin-left:400px;
+    margin-top:200px;
+    text-transform: uppercase;
+    color:white;
+}
+.content-1{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+.content-1 h1{
+    margin-top:20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid blue;
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    /*border: 1px solid black;*/
+    margin:20px;
+    margin-left:80px;
+    float: left;
+    padding:20px;
+    box-shadow: 2px gray;
+}
+img{
+    height:130px;
+    width:130px;
+}
+.box:hover{
+    /*border:3px solid blue;*/
+    background-color: #F2F4F4;
+    box-shadow: 4px 4px 4px 4px  gray;
+    border-radius: 10px;
+}
+input[type="submit"]{
+    height:45px;
+    width:auto;
+    padding:5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #00FF00;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+input[type="submit"]:hover{
+    box-shadow: 3px 3px 3px 3px gainsboro;
+}

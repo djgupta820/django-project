@@ -1,0 +1,57 @@
+{% load static %}
+<!doctype Html>
+<html> 
+    <head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" media="screen" href="{% static 'sites/style.css' %}" type="text/css" />
+        <link rel="stylesheer" media="screen" href="{% static 'sites/style1.css' %}" type="text/css">
+        <link rel="stylesheer" media="screen" href="{% static 'sites/index.css' %}" type="text/css">
+        <script src="{% static 'sites/script.js' %}" type="text/JavaScript"> </script>
+    
+        {% if title %}
+            <title> {{title}} </title>
+        {% else %}
+            <title> languages </title>
+        {% endif %}
+
+    </head>
+    <body> 
+        <div class="navbar">
+            <a href="{% url 'index' %}">Home</a>
+            <div class="dropdown">
+                <button class="dropbtn">WebTech
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="{% url 'html' %}">Html</a>
+                    <a href="{% url 'css' %}">CSS</a>
+                    <a href="{% url 'js' %}">JavaScript</a>
+                    <a href="{% url 'php_' %}">PHP</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">Programming
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="{% url 'c' %}">C</a>
+                    <a href="{% url 'cpp' %}">C++</a>
+                    <a href="{% url 'java' %}">Java</a>
+                    <a href="{% url 'python' %}">Python</a>
+                </div>
+            </div>
+            <a href="{% url 'linux' %}">Linux</a>
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">Developer
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="{% url 'projects' %}">Projects</a>
+                    <a href="https://djgupta820.github.io/portfolio/" target="_blank">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    {% block content %}{% endblock  %}
+    </body>
+</html>
